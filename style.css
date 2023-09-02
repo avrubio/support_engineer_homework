@@ -36,7 +36,6 @@ article {
   padding: 20px; /* Reduce padding for smaller screens */
   border-radius: 20px; /* Adjust border-radius for smaller screens */
   width: 100%; /* Make it full width for small screens */
-  max-width: 600px; /* Limit max width for larger screens */
 }
 
 button {
@@ -66,12 +65,14 @@ input {
 }
 
 /* Media query for smaller screens */
-@media screen and (max-width: 600px) {
-  article {
-    padding: 10px;
+@media only screen and (min-width: 390px) {
+  body {
+    text-align: center;
   }
-
-  button {
-    padding: 14px 10px;
+  h1 {
+    font-size: 30px;
+  }
+  article {
+    width: 300px;
   }
 }
