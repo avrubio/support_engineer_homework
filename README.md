@@ -1,27 +1,40 @@
-# Support Engineer Homework
+# JavaScript Application
 
-1. Fork this repository.
-2. Use the [test data](https://docs.google.com/spreadsheets/d/1uyDXhb3T3-LVywTvpH1ixWbz6if7vUaUQC6YHcNm-wY/edit?usp=sharing) to answer the questions below. The test data is in CSV form in two tabs. Each tab represents a table:
-   - organzation
-   - account 
-4. Add all SQL and JavaScript files to your fork.
-5. Write a README explaining how to run your application.
-6. Push up your submission and let us know where to find it.
+This JavaScript application offers four different reports based on provided data. The app can be run in a web-based environment and provides the user with the following options:
 
-## Questions:
+1. Report 1: Optimization Settings Report
+   This option takes a myShopifyDomain as input.
+   It retrieves and displays the optimization settings for the specified Shopify domain.
+2. Report 2: Organizations Sorted by Creation Date Report
+   This option loops through all organizations.
+   It displays the date they were created (in DD/MM/YYYY format), their status, and planName.
+   The organizations are sorted by creation date, from oldest to newest.
+3. Report 3: Canceled Organizations Report
+   This option returns a list of organizations whose status is marked as "CANCELLED."
+4. Report 4: Organization Record in JSON Format Report
+   This option takes an orgName as input.
+   It retrieves and displays the organization record in JSON format for the specified organization name.
+   Prerequisites:
 
-Use JS and SQL to answer the following questions.
+# How to Use:
 
-**JavaScript**
-- Write a JavaScript application. The app can be a CLI or web-based app. It should provide a user with the options to run four reports:
-  1. Takes the value of a `myShopifyDomain` field as an input and returns their `optimization` settings.
-  2. Loops through all organizations and shows the date they were created (DD/MM/YYYY), their `status`, and `planName` sorted by oldest to newest.
-  3. Returns the list of organizations whose status is cancelled.
-  4. Takes the value of an `orgName` and returns the organization record in JSON format.
+Run the web based app via:
 
-**SQL**
-- Write SQL queries to return:
-  - How many organizations do not have account plans? 
-  - How many organizations have more than one account plan?
-  - List all organizations that have only one account plan.
-  - List all organizations that have the PASSWORDLESS feature set to true.
+The web page will provide you with four options to generate reports.
+Follow the on-screen instructions for each option:
+
+1. Report 1: Enter a Shopify subdomain (e.g., "test-account-8") and click the "Generate Report" button to view optimization settings.
+
+2. Report 2: Click the "Generate Report" button to view organizations sorted by creation date.
+
+3. Report 3: Click the "Generate Report" button to view organizations with "CANCELLED" status.
+
+4. Report 4: Enter an organization name and click the "Generate Report" button to view the organization's record in JSON format.
+
+Note: Thank you for the opportunity to get this far in the interview process, this was an exciting take home project to do. Looking forward to the next steps with Smartrr!
+
+Author:
+Ariadna Vanegas-Rubio
+
+Date:
+September 2, 2023
