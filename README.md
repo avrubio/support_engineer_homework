@@ -18,7 +18,7 @@ This JavaScript application offers four different reports based on provided data
 
 # How to Use:
 
-Run the web based app via:
+Run the web based app via: https://avrubio.github.io/support_engineer_homework/
 
 The web page will provide you with four options to generate reports.
 Follow the on-screen instructions for each option:
