@@ -3,9 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Your new Support Engineer!</title>
   </head>
   <body>
-    <script src="script.js"></script>
+    <h1>
+      Account Plan & Organization <br />
+      Report Generator
+    </h1>
+    <article>
+      <section class="optimization">
+        <h2>Report 1</h2>
+        <p>
+          Takes the value of a myShopifyDomain field as an input and returns
+          their optimization settings.
+          <br />
+          e.g. (test-acccount-1)
+        </p>
+        <input
+          type="text"
+          id="myShopifyDomain"
+          placeholder="Enter Shopify Domain"
+        />
+
+        <div id="reportOne"></div>
+      </section>
+
+      <section class="status">
+        <h2>Report 2</h2>
+        <p>
+          Loops through all organizations and shows the date they were created
+          (DD/MM/YYYY), their status, and planName sorted by oldest to newest.
+        </p>
+        <button id="reportTwoBtn">Generate Report</button>
+        <div id="reportTwo"></div>
+      </section>
+      <section>
+        <h2>Report 3</h2>
+        <p>Returns the list of organizations whose status is cancelled.</p>
+        <button id="reportThreeBtn">Generate Report</button>
+        <div id="reportThree"></div>
+      </section>
+      <section>
+        <h2>Report 4</h2>
+        <p>
+          Takes the value of an orgName and returns the organization record in
+          JSON format.
+          <br />
+          e.g. (Test Account 1)
+        </p>
+        <label for="orgName">Organization Name:</label>
+        <input type="text" id="orgNameInput" />
+        <br />
+        <button id="reportFourBtn">Generate Report</button>
+        <div id="reportFour"></div>
+      </section>
+    </article>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
